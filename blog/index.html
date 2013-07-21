@@ -1,0 +1,18 @@
+---
+layout: default
+title: Tyler Cipriani&mdash;Weblog
+---
+
+{% for post in site.posts %}
+    <article>
+        <header>
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        </header>
+        <aside><span>Posted on:</span> {{ post.date | date: "%B %e, %Y" }} <span>by</span> Tyler H.T. Cipriani</aside>
+        <p>
+            {{ post.excerpt }}
+        </p>
+        <hr />
+    </article>
+
+{% endfor %}

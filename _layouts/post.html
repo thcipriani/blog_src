@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<article>
+    <header>
+        <h1>{{ page.title }}</h1>
+        <h2>Posted on: <span>{{ page.date | date: "%B %e, %Y" }}</span> by <span>Tyler H.T. Cipriani</span></h2>
+    </header>
+
+    {% if page.image %}
+      <figure>
+          <img src="{{ page.image }}" alt="{{ page.image_alt }}" />
+      </figure>
+    {% endif %}
+
+    {{ content }}
+
+    <hr />
+
+    <a href="/blog/" title="Back to the weblog">&larr; View Weblog</a>
+
+    <footer>
+        <script type="text/javascript">
+            var disqus_shortname = 'tylercipriani';
+
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </footer>
+</article>
