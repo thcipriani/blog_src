@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installing Vim from source on CentOS 6
+title: Installing Vim from source on CentOS&nbsp;6.3
 ---
 …or, I suppose, other Linux-es…Linuxi…Linux distributions.
 
