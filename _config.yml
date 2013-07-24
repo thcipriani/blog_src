@@ -1,4 +1,4 @@
 auto: true
 server: true
 markdown: rdiscount
-exclude: Gruntfile.js, package.json, sass, node_modules
+exclude: Gruntfile.js, package.json, sass, node_modules, dev, gallery.html
