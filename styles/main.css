@@ -1,4 +1,6 @@
-/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* tylercipriani.com | Apache2 License */
+
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
 
 /* ==========================================================================
    HTML5 display definitions
@@ -485,7 +487,13 @@ body {
     padding: 5em 0 8em;
     color: #222222;
     background: #FEFEFE;
-    font: normal normal 400 120%/1.5 "adobe-caslon-pro", Baskerville;
+    /*font: normal normal 400 120%/1.5 "adobe-caslon-pro", Baskerville;*/
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    font-size: 120%;
+    line-height: 1.4;
+    font-family: "adobe-caslon-pro", "Baskerville";
     overflow-y: scroll;
     text-rendering: optimizeLegibility;
 
@@ -576,7 +584,7 @@ header h1 a:visited {
 /* base header styles */
 header h1 {
     text-align: center;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.15em;
 }
 
 header h2 {
@@ -638,6 +646,7 @@ hr {
 
 figure {
     margin: 1.8em auto 0;
+    overflow: hidden;
     *zoom: 1;
 }
 
@@ -649,13 +658,42 @@ figure img {
 figure ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 0 -2.3333%;
+    margin: 0;
+    width: 300%;
+
+    -webkit-transition: all 0.5s ease-out; 
+       -moz-transition: all 0.5s ease-out; 
+         -o-transition: all 0.5s ease-out; 
+            transition: all 0.5s ease-out; 
 }
 
 figure ul li {
     float: left;
-    margin-left: 2.3333%;
-    width: 30%;
+    width: 33.3333%;
+    text-align: center;
+}
+
+figure ul li button {
+    float: right;
+    border: none;
+    background: none;
+    margin-top: 0.5em;
+    opacity: 1;
+    font-size: 0.83em;
+    font-variant: small-caps;
+
+    -webkit-transition: all 0.3s ease-out; 
+       -moz-transition: all 0.3s ease-out; 
+         -o-transition: all 0.3s ease-out; 
+            transition: all 0.3s ease-out; 
+}
+
+figure ul li button:first-of-type { float: left; }
+
+figure ul li figcaption {
+    margin: 0 9em 0;
+    font-size: 0.83em;
+    text-align: left;
 }
 
 figure:before,
@@ -667,6 +705,21 @@ figure:after {
 figure:after {
     clear: both;
 }
+
+/* slideshow */
+figure aside {
+    display: none;
+}
+
+aside:nth-of-type(1):target ~ ul { margin-left: 0; }
+aside:nth-of-type(2):target ~ ul li:nth-of-type(1) button { opacity: 0; }
+
+aside:nth-of-type(2):target ~ ul { margin-left: -100%; }
+aside:nth-of-type(3):target ~ ul li:nth-of-type(2) button { opacity: 0; }
+aside:nth-of-type(1):target ~ ul li:nth-of-type(2) button { opacity: 0; }
+
+aside:nth-of-type(3):target ~ ul { margin-left: -200%; }
+aside:nth-of-type(2):target ~ ul li:nth-of-type(3) button { opacity: 0; }
 
 /* nav */
 nav ul {
@@ -691,7 +744,7 @@ section header h1 {
     font-size: 1.5em;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.15em;
 }
 
 section footer {
@@ -748,9 +801,7 @@ article h2 {
         padding: 3em 0 5em 0;
     }
 
-    figure ul li {
-        float: left;
-        margin-left: 0;
-        width: 100%;
+    figcaption {
+        display: none;
     }
 }

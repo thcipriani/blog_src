@@ -2,7 +2,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
             files: ['sass/*.scss', 'index.html', '*.html'],
-            tasks: ['sass:dev', 'jekyll:dev']
+            tasks: ['sass:dev', 'cssmin:css', 'jekyll:prod']
         },
 
         reload: {
@@ -21,7 +21,11 @@ module.exports = function(grunt) {
             },
             dev: {
                 src: '.',
-                dest: 'dev',
+                dest: 'dev'
+            },
+            prod: {
+                src: '.',
+                dest: '_site'
             }
         },
 
@@ -31,13 +35,21 @@ module.exports = function(grunt) {
                     'styles/gallery.css': 'sass/gallery.scss'
                 }
             }
+        },
+
+        cssmin: {
+            css: {
+                src: 'styles/main.css',
+                dest: 'styles/main-min.css'
+            }
         }
     });
 
-    grunt.registerTask('default', ['sass:dev', 'jekyll:dev']);
+    grunt.registerTask('default', ['sass:dev', 'cssmin:css', 'jekyll:prod']);
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-reload');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 }
