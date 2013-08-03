@@ -38,14 +38,18 @@
 
             {{ content }}
 
-            <footer>
+            {% if page.url != "/index.html" %}
+            <article> 
+            {% endif %}
+            <footer >
                 <p>
-                    All pixels lovingly mashed by Tyler Cipriani
-                </p>
-                <p>
+                    All pixels lovingly mashed by Tyler Cipriani<br />
                     Copyright 2013&mdash;<a href="http://www.apache.org/licenses/LICENSE-2.0.html" target="_blank" title="Apache v2 license agreement">Apache v2 License</a>
                 </p>
             </footer>
+            {% if page.url == "/blog/index.html" %}
+            </article> 
+            {% endif %}
         </main>
 
         <script type="text/javascript">

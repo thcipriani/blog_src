@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
-            files: ['sass/*.scss', 'index.html', '*.html'],
+            files: ['sass/*.scss', 'index.html', '*.html', 'styles/*.css', '_layouts/*.html'],
             tasks: ['sass:dev', 'cssmin:css', 'jekyll:prod']
         },
 

@@ -19,15 +19,17 @@ existing site.
 <h2>Needed</h2>
 
 I&#8217;m making the assumption that you have the following:
- * Knowledge of Linux
- * &shy;<a href="http://library.linode.com/lamp-guides/ubuntu-12.04-precise-pangolin" target="_blank">
-     A local development environment
-   </a>
- * git-core installed both locally and on your webserver
- * rsync installed both locally and on your webserver
- * &shy;<a href="http://www.commandlinefu.com/commands/view/771/copy-your-ssh-public-key-on-a-remote-machine-for-passwordless-login-the-easy-way" target="_blank">
-     Keyless SSH access to your webserver
-   </a>
+<ul>
+<li>Knowledge of Linux</li>
+<li>&shy;<a href="http://library.linode.com/lamp-guides/ubuntu-12.04-precise-pangolin" target="_blank">
+A local development environment
+</a></li>
+<li>git-core installed both locally and on your webserver</li>
+<li>rsync installed both locally and on your webserver</li>
+<li>&shy;<a href="http://www.commandlinefu.com/commands/view/771/copy-your-ssh-public-key-on-a-remote-machine-for-passwordless-login-the-easy-way" target="_blank">
+  Keyless SSH access to your webserver
+</a></li>
+</u>
  
 I&#8217;m using Ubuntu 12.04 locally, but I&#8217;d assume that most of this 
 won&#8217;t be too different on a different distribution or on a Mac&#8212;but 
