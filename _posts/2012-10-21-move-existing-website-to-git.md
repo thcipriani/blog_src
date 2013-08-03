@@ -29,7 +29,7 @@ A local development environment
 <li>&shy;<a href="http://www.commandlinefu.com/commands/view/771/copy-your-ssh-public-key-on-a-remote-machine-for-passwordless-login-the-easy-way" target="_blank">
   Keyless SSH access to your webserver
 </a></li>
-</u>
+</ul>
  
 I&#8217;m using Ubuntu 12.04 locally, but I&#8217;d assume that most of this 
 won&#8217;t be too different on a different distribution or on a Mac&#8212;but 
