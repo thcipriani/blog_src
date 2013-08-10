@@ -51,4 +51,4 @@ interesting discussions and people around the internet.
 Beginners will have an amazing starting point and advanced users will have 
 a wellspring of ideas.
 
-Fork &#8216;em if ya got &#8216;em.
+[Fork &#8216;em if ya got &#8216;em.](https://help.github.com/articles/using-pull-requests/)
