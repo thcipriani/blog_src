@@ -19,7 +19,11 @@ The problems my old `boostrap` were
    add a README.md file without it being symlinked in the `$HOME` directory as 
    `.README.md`&#8212;silly, right?!
 
-So I started perusing dotfile repos on github&#8212;which is always exciting 
+Long story short&#8212;I needed a new `bootstrap` file. I&#8217;m a big 
+believer in not reinventing the wheel, so I went looking for the canonical 
+example of the dotfile bootstrap file.
+
+I started perusing dotfile repos on github&#8212;which is always exciting 
 to me (because I&#8217;m super nerdy) and there are some amazing dotfile resources 
 on github:
 
@@ -28,14 +32,17 @@ on github:
 - [gf3&#8217;s Sexy Bash Prompt](https://github.com/gf3/dotfiles)
 - [Zach Holman&#8217;s Bootstrap script](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/)
 - [Addy Osmani&#8217;s Handy Aliases](https://github.com/addyosmani/dotfiles/blob/master/.aliases)
-
-And the truly insane:
-
 - [pengwynn&#8217;s There&#8217;s no place like ~/](https://github.com/pengwynn/dotfiles)
 
 Seeing all of this got me to thinking&#8212;wouldn&#8217;t it be great if there 
 were a project that amalgamated all of this fun stuff? Like HTML5 Boilerplate 
 for dotfiles.
+
+The project will keep canonical examples of files like the `bootstrap` script. 
+It would also keep an opinionated list of functions, aliases and 
+configurations that could help beginners get a great start and normalize 
+dotfile distribution in the same way that pathogen normalized vim plugins 
+into bundles.
 
 ## Dotfile Boilerplate
 
