@@ -18,7 +18,7 @@ This assumes you've already got a development environment that runs PHP5.
 * The first thing to do, if you haven't already, is to [register](http://aws.amazon.com/ "AWS Register") for Amazon Web Services
 * After you've registered for a AWS account, login to your account and go to the “My Account/Console” pulldown at the top and 
 click, “Security Credentials”
-* Scroll down to “Access Credentials”<br><img src="http://tylercipriani.s3.amazonaws.com/blog/access_credentials.png" alt="Access Credentials">
+* Scroll down to “Access Credentials”<br><img src="http://tylercipriani-files.s3.amazonaws.com/blog/access_credentials.png" alt="Access Credentials">
 * Copy your "Access Key ID", click "Show" and copy your "Secret Access Key"
 * Go ahead and clone the [Amazon ECS PHP Library](https://github.com/Exeu/Amazon-ECS-PHP-Library "Amazon ECS PHP Library") to your development environment{% highlight bash %}$ git clone https://github.com/Exeu/Amazon-ECS-PHP-Library.git{% endhighlight %}
 * You'll only be using the file <code>lib/AmazonECS.class.php</code> so copy that wherever you'd like

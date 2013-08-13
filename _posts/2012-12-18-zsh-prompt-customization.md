@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My ZSH (and bash) prompt
-image: http://tylercipriani.s3.amazonaws.com/blog/junkfoodtheme.png
+image: http://tylercipriani-files.s3.amazonaws.com/blog/junkfoodtheme.png
 image_alt: Junkfood theme in git directory
 ---
 In order to become a card-carrying Linux user, I feel like you _need_ to

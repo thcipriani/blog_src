@@ -65,7 +65,7 @@ it&#8217;easy to read, contrast-wise anyway.
 
 **Apple&#8217;s nav bar**
 
-<img class="blogImg" src="http://tylercipriani.s3.amazonaws.com/blog/Apple-nav-bar.png" alt="Apple's nav bar">
+<img class="blogImg" src="http://tylercipriani-files.s3.amazonaws.com/blog/Apple-nav-bar.png" alt="Apple's nav bar">
 
 Apple&#8217;s nav bar is a gradient, so this analysis is for the color at 
 the lightest point of the gradient versus the text
@@ -79,7 +79,7 @@ the lightest point of the gradient versus the text
 
 **Google&#8217;s account settings bar**
 
-<img class="blogImg" src="http://tylercipriani.s3.amazonaws.com/blog/google-account-settings.png" alt="Google's account settings bar">
+<img class="blogImg" src="http://tylercipriani-files.s3.amazonaws.com/blog/google-account-settings.png" alt="Google's account settings bar">
 
 The Google account settings bar has always seemed to be fairly low-contrast 
 to me&#8212;let&#8217;s test a theory.
@@ -91,5 +91,5 @@ to me&#8212;let&#8217;s test a theory.
 
 Out of curiousity I decided to see what these recommendations would look like for Google in practice&#8212;answer: more readable, arguably less aesthetically appealing (see below).
 
-<img class="blogImg" src="http://tylercipriani.s3.amazonaws.com/blog/google-account-settings_large.png" alt="Google's account settings bar—larger font">
+<img class="blogImg" src="http://tylercipriani-files.s3.amazonaws.com/blog/google-account-settings_large.png" alt="Google's account settings bar—larger font">
 
