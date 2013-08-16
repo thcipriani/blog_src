@@ -1,3 +1,4 @@
 # Static site output
 _site
 node_modules
+.sass-cache/

@@ -2,7 +2,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
             files: ['sass/*.scss', 'index.html', '*.html', 'styles/*.css', '_layouts/*.html'],
-            tasks: ['sass:dev', 'cssmin:css', 'jekyll:prod']
+            tasks: ['cssmin:css', 'jekyll:prod']
         },
 
         reload: {
@@ -45,7 +45,7 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', ['sass:dev', 'cssmin:css', 'jekyll:prod']);
+    grunt.registerTask('default', ['cssmin:css', 'jekyll:prod']);
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
