@@ -44,11 +44,11 @@ set-option -sg escape-time 0
 <li>
 Maximize Panes
 
-One of the things I love about Vim splits is that you can hit `Ctrl`-`|` to
-maximize the current  pane and hit `Ctrl`-`=` to bring it back to an even 
+One of the things I love about Vim splits is that you can hit `Ctrl-w` `|` to
+maximize the current  pane and hit `Ctrl-w` `=` to bring it back to an even 
 split. Bringing that functionality to Tmux is very powerful and super easy.
-This line will let you hit `Ctrl`-`|` to maximize a single pane and then hit
-`Ctrl`-`|` again to bring it back to the original split.
+This line will let you hit `Meta` `|` to maximize a single pane and then hit
+`Meta` `|` again to bring it back to the original split.
 
 {% highlight bash %}
 bind-key | resize-pane -Z \; display-message "Zoom zoom zoom"
