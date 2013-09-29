@@ -1,0 +1,135 @@
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 98%;
+        .column-1 {
+            width: 20%;
+        }
+        .column-2 {
+            width: 80%;
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .figlet {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        width: 98%;
+        .column-1 {
+            display: none;
+        }
+        .column-2 {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .indent-1 {
+        padding-left: 1em;
+    }
+
+    .indent-2 {
+        padding-left: 2em;
+    }
+
+    .indent-3 {
+        padding-left: 3em;
+    }
+
+    .indent-4 {
+        padding-left: 4em;
+    }
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 70%;
+        .column-1 {
+            display: none;
+        }
+        .column-2 {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    .figlet {
+        display: none;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

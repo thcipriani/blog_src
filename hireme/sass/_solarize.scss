@@ -1,0 +1,47 @@
+a {
+    color: $cyan;
+    &:hover {
+        color: $blue;
+    }
+    &:visited {
+        color: $violet;
+    }
+}
+
+.solar-string {
+    color: $red;
+}
+
+.solar-key {
+    color: $green;
+}
+
+.solar-key-second {
+    color: $magenta;
+}
+
+.solar-value {
+    color: $blue;
+}
+
+.solar-comma {
+    color: $base1;
+}
+
+.solar-separator {
+    color: $base2;
+}
+
+.solar-brace {
+    color: $cyan;
+}
+
+.solar-comment,
+.solar-comment h1,
+.solar-comment a {
+    color: $base00;
+}
+
+.solar-date {
+    color: $base1;
+}

@@ -418,10 +418,10 @@ table {
 body {
   padding: 2em 0;
   font-size: 16px;
-  font-family: 'Source Code Pro', Arial;
+  font-family: 'Source Code Pro', Menlo, Monaco, monospace;
   line-height: 1.5em;
-  color: #fdf6e3;
   font-weight: 400;
+  color: #fdf6e3;
   background: #002b36;
 }
 
@@ -435,54 +435,46 @@ h1,
 h2,
 h3,
 h4 {
+  margin: 0;
   font-weight: 400;
   font-size: 1em;
-  margin: 0;
 }
 
 /* line 42, ../sass/_base.scss */
-h1 {
-  color: #dc322f;
-}
-
-/* line 46, ../sass/_base.scss */
-h2 {
-  color: #859900;
-}
-
-/* line 50, ../sass/_base.scss */
-h3 {
-  color: #268bd2;
-}
-
-/* line 54, ../sass/_base.scss */
-a {
-  color: #2aa198;
-}
-/* line 56, ../sass/_base.scss */
-a:hover {
-  color: #268bd2;
-}
-/* line 59, ../sass/_base.scss */
-a:visited {
-  color: #6c71c4;
-}
-
-/* line 63, ../sass/_base.scss */
-aside {
-  color: #93a1a1;
-}
-
-/* line 67, ../sass/_base.scss */
 section {
   margin-bottom: 1em;
 }
 
-/* line 73, ../sass/_base.scss */
-.comment,
-.comment h1,
-.comment a {
+/* line 46, ../sass/_base.scss */
+ul {
+  padding: 0;
+}
+/* line 48, ../sass/_base.scss */
+ul li {
+  list-style: none;
+}
+/* line 50, ../sass/_base.scss */
+ul li:before {
+  content: "* ";
+  margin-left: -1.25em;
+  color: #586e75;
+}
+
+/* line 58, ../sass/_base.scss */
+pre {
+  white-space: pre;
+}
+
+/* line 62, ../sass/_base.scss */
+::-moz-selection {
+  background: #cb4b16;
   color: #839496;
+}
+
+/* line 67, ../sass/_base.scss */
+::selection {
+  background: #b58900;
+  color: #002b36;
 }
 
 /* line 1, ../sass/_indent.scss */
@@ -511,28 +503,84 @@ section {
   max-width: 1140px;
   margin: 0 auto;
 }
-/* line 8, ../sass/_layout.scss */
-.container main {
-  margin-top: 1.5em;
-}
-/* line 12, ../sass/_layout.scss */
+/* line 9, ../sass/_layout.scss */
 .container .column-1,
 .container .column-2 {
   float: left;
 }
-/* line 14, ../sass/_layout.scss */
+/* line 11, ../sass/_layout.scss */
 .container .column-1 .column-inside,
 .container .column-2 .column-inside {
   padding: 10px;
 }
-/* line 18, ../sass/_layout.scss */
+/* line 15, ../sass/_layout.scss */
 .container .column-1 {
   width: 23.1966%;
 }
-/* line 21, ../sass/_layout.scss */
+/* line 18, ../sass/_layout.scss */
 .container .column-2 {
   width: 61.8034%;
   margin-right: 15%;
+}
+
+/* line 1, ../sass/_solarize.scss */
+a {
+  color: #2aa198;
+}
+/* line 3, ../sass/_solarize.scss */
+a:hover {
+  color: #268bd2;
+}
+/* line 6, ../sass/_solarize.scss */
+a:visited {
+  color: #6c71c4;
+}
+
+/* line 11, ../sass/_solarize.scss */
+.solar-string {
+  color: #dc322f;
+}
+
+/* line 15, ../sass/_solarize.scss */
+.solar-key {
+  color: #859900;
+}
+
+/* line 19, ../sass/_solarize.scss */
+.solar-key-second {
+  color: #d33682;
+}
+
+/* line 23, ../sass/_solarize.scss */
+.solar-value {
+  color: #268bd2;
+}
+
+/* line 27, ../sass/_solarize.scss */
+.solar-comma {
+  color: #93a1a1;
+}
+
+/* line 31, ../sass/_solarize.scss */
+.solar-separator {
+  color: #eee8d5;
+}
+
+/* line 35, ../sass/_solarize.scss */
+.solar-brace {
+  color: #2aa198;
+}
+
+/* line 41, ../sass/_solarize.scss */
+.solar-comment,
+.solar-comment h1,
+.solar-comment a {
+  color: #657b83;
+}
+
+/* line 45, ../sass/_solarize.scss */
+.solar-date {
+  color: #93a1a1;
 }
 
 /* line 2, ../sass/_skillz.scss */
@@ -566,9 +614,170 @@ section {
 
 /* line 24, ../sass/_skillz.scss */
 .skill-point {
+  font-size: 1.5em;
   color: #586e75;
 }
-/* line 26, ../sass/_skillz.scss */
+/* line 27, ../sass/_skillz.scss */
 .skill-point.full {
   color: #b58900;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 2, ../sass/_media.scss */
+  .container {
+    width: 98%;
+  }
+  /* line 4, ../sass/_media.scss */
+  .container .column-1 {
+    width: 20%;
+  }
+  /* line 7, ../sass/_media.scss */
+  .container .column-2 {
+    width: 80%;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 625px) {
+  /* line 15, ../sass/_media.scss */
+  .figlet {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  /* line 21, ../sass/_media.scss */
+  .container {
+    width: 98%;
+  }
+  /* line 23, ../sass/_media.scss */
+  .container .column-1 {
+    display: none;
+  }
+  /* line 26, ../sass/_media.scss */
+  .container .column-2 {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 34, ../sass/_media.scss */
+  .indent-1 {
+    padding-left: 1em;
+  }
+
+  /* line 38, ../sass/_media.scss */
+  .indent-2 {
+    padding-left: 2em;
+  }
+
+  /* line 42, ../sass/_media.scss */
+  .indent-3 {
+    padding-left: 3em;
+  }
+
+  /* line 46, ../sass/_media.scss */
+  .indent-4 {
+    padding-left: 4em;
+  }
+}
+@media print {
+  /* line 52, ../sass/_media.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 59, ../sass/_media.scss */
+  body {
+    font-size: 12px;
+  }
+
+  /* line 63, ../sass/_media.scss */
+  .container {
+    width: 70%;
+  }
+  /* line 65, ../sass/_media.scss */
+  .container .column-1 {
+    display: none;
+  }
+  /* line 68, ../sass/_media.scss */
+  .container .column-2 {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* line 74, ../sass/_media.scss */
+  .figlet {
+    display: none;
+  }
+
+  /* line 79, ../sass/_media.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 83, ../sass/_media.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 87, ../sass/_media.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 97, ../sass/_media.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 102, ../sass/_media.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 107, ../sass/_media.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 112, ../sass/_media.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 116, ../sass/_media.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 126, ../sass/_media.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 132, ../sass/_media.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }

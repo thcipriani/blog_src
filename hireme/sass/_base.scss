@@ -18,10 +18,10 @@ $green:     #859900;
 body {
     padding: 2em 0;
     font-size: 16px;
-    font-family: 'Source Code Pro', Arial;
+    font-family: 'Source Code Pro', Menlo, Monaco, monospace;
     line-height: 1.5em;
-    color: $base3;
     font-weight: 400;
+    color: $base3;
     background: $base03;
 }
 
@@ -34,42 +34,37 @@ h1,
 h2, 
 h3, 
 h4 {
+    margin: 0;
     font-weight: 400;
     font-size: 1em;
-    margin: 0;
-}
-
-h1 {
-    color: $red;
-}
-
-h2 {
-    color: $green;
-}
-
-h3 {
-    color: $blue;
-}
-
-a {
-    color: $cyan;
-    &:hover {
-        color: $blue;
-    }
-    &:visited {
-        color: $violet;
-    }
-}
-aside {
-    color: $base1;
 }
 
 section {
     margin-bottom: 1em;
 }
 
-.comment,
-.comment h1,
-.comment a {
+ul {
+    padding: 0;
+    li {
+        list-style: none;
+        &:before {
+            content: "* ";
+            margin-left: -1.25em;
+            color: $base01;
+        }
+    }
+}
+
+pre {
+    white-space: pre;
+}
+
+::-moz-selection {
+    background: $orange;
     color: $base0;
+}
+
+::selection {
+    background: $yellow;
+    color: $base03;
 }

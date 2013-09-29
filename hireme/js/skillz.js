@@ -14,7 +14,7 @@
             "<h2 class='skill-title'><%= name %></h2>" +
             "<p>" +
             "<% for(var i = 0; i < 5; i++) { %>" +
-                "<span class='skill-point<%= i < level ? ' full': '' %>'><%= i < level ? '&#9733;': '&#9734;' %> </span>" +
+                "<span class='skill-point<%= i < level ? ' full': '' %>'><%= i < level ? '&#9733;': '&#9734;' %></span>" +
             "<% } %>" +
             "</p>" +
         "</div><!-- /.skill -->"
