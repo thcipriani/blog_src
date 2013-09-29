@@ -12,6 +12,10 @@
 }
 
 @media screen and (max-width: 625px) {
+    body {
+        font-size: 14px;
+    }
+
     .figlet {
         display: none;
     }
