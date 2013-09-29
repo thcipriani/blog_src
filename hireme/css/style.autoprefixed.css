@@ -497,15 +497,197 @@ table {
   border-spacing: 0;
 }
 
-/* line 61, ../../../../.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 18, ../sass/_base.scss */
 
-* html {
-  font-size: 150%;
+body {
+  padding: 2em 0;
+  font-size: 16px;
+  font-family: 'Source Code Pro', Arial;
+  line-height: 1.5em;
+  color: #fdf6e3;
+  font-weight: 400;
+  background: #002b36;
 }
 
-/* line 64, ../../../../.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 36, ../sass/_base.scss */
 
-html {
-  font-size: 24px;
-  line-height: 1.5em;
+pre,
+ul,
+p,
+b,
+strong,
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+}
+
+/* line 42, ../sass/_base.scss */
+
+h1 {
+  color: #dc322f;
+}
+
+/* line 46, ../sass/_base.scss */
+
+h2 {
+  color: #859900;
+}
+
+/* line 50, ../sass/_base.scss */
+
+h3 {
+  color: #268bd2;
+}
+
+/* line 54, ../sass/_base.scss */
+
+a {
+  color: #2aa198;
+}
+
+/* line 56, ../sass/_base.scss */
+
+a:hover {
+  color: #268bd2;
+}
+
+/* line 59, ../sass/_base.scss */
+
+a:visited {
+  color: #6c71c4;
+}
+
+/* line 63, ../sass/_base.scss */
+
+aside {
+  color: #93a1a1;
+}
+
+/* line 67, ../sass/_base.scss */
+
+section {
+  margin-bottom: 1em;
+}
+
+/* line 73, ../sass/_base.scss */
+
+.comment,
+.comment h1,
+.comment a {
+  color: #839496;
+}
+
+/* line 1, ../sass/_indent.scss */
+
+.indent-1 {
+  padding-left: 2em;
+}
+
+/* line 5, ../sass/_indent.scss */
+
+.indent-2 {
+  padding-left: 4em;
+}
+
+/* line 9, ../sass/_indent.scss */
+
+.indent-3 {
+  padding-left: 6em;
+}
+
+/* line 13, ../sass/_indent.scss */
+
+.indent-4 {
+  padding-left: 8em;
+}
+
+/* line 4, ../sass/_layout.scss */
+
+.container {
+  width: 85%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* line 8, ../sass/_layout.scss */
+
+.container main {
+  margin-top: 1.5em;
+}
+
+/* line 12, ../sass/_layout.scss */
+
+.container .column-1,
+.container .column-2 {
+  float: left;
+}
+
+/* line 14, ../sass/_layout.scss */
+
+.container .column-1 .column-inside,
+.container .column-2 .column-inside {
+  padding: 10px;
+}
+
+/* line 18, ../sass/_layout.scss */
+
+.container .column-1 {
+  width: 23.1966%;
+}
+
+/* line 21, ../sass/_layout.scss */
+
+.container .column-2 {
+  width: 61.8034%;
+  margin-right: 15%;
+}
+
+/* line 2, ../sass/_skillz.scss */
+
+.skill:before,
+.skill:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 7, ../sass/_skillz.scss */
+
+.skill:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+/* line 15, ../sass/_skillz.scss */
+
+.skill {
+  *zoom: 1;
+}
+
+/* line 19, ../sass/_skillz.scss */
+
+.skill-title {
+  color: #839496;
+  font-size: 1em;
+}
+
+/* line 24, ../sass/_skillz.scss */
+
+.skill-point {
+  color: #586e75;
+}
+
+/* line 26, ../sass/_skillz.scss */
+
+.skill-point.full {
+  color: #b58900;
 }

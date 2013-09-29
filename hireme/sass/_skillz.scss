@@ -1,0 +1,29 @@
+.skill:before,
+.skill:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.skill:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.skill {
+    *zoom: 1;
+}
+
+.skill-title {
+    color: $base0;
+    font-size: 1em;
+}
+
+.skill-point {
+    color: $base01;
+    &.full {
+        color: $yellow;
+    }
+}
