@@ -6,6 +6,12 @@ title: Installing Vim from source on CentOS&nbsp;6.3
 
 Many of the Vim features on which I&#8217;ve come to depend simply aren't available in Vim pre-7.3.3. That&#8217;s fine if I&#8217;m working on an OS that cares about having up-to-date software like Ubuntu or OSX; however, it ain&#8217;t so great if I&#8217;m working on a shared host that uses CentOS **_five point something dumb_** because the hosting-providers weren&#8217;t hugged as children (I&#8217;d guess).
 
+>**edit**&#8212;10/01/2013
+>
+>For installing on Ubuntu and additional source install tips see this little
+>[post](https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source) 
+>on the YouCompleteMe wiki
+
 ## New OS, Old Repo
 
 The only thing worse than working on an old OS, with an old version of Vim is working on a _new_ OS with an old version of Vim. I recently disovered that the yum-installable Vim (vim-enhanced) version on CentOS 6.3 is v.7.2.411—WTF CentOS? What&#8217;s your deal, guy?
