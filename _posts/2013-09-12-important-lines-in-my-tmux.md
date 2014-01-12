@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Knowledge Nuggets From My Tmux.conf
+image: http://farm4.staticflickr.com/3778/9539539885_425d048245_h.jpg
+image_alt: doc
 ---
 
 When I switched from GNU Screen to Tmux, I was just jazzed that Tmux _had_ a 

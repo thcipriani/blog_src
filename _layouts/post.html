@@ -4,15 +4,15 @@ layout: default
 
 <article>
     <header>
+      {% if page.image %}
+        <figure>
+            <img src="{{ page.image }}" alt="{{ page.image_alt }}" />
+        </figure>
+      {% endif %}
+
         <h1>{{ page.title }}</h1>
         <h2>Posted on: <span>{{ page.date | date: "%B %e, %Y" }}</span> by <span>Tyler H.T. Cipriani</span></h2>
     </header>
-
-    {% if page.image %}
-      <figure>
-          <img src="{{ page.image }}" alt="{{ page.image_alt }}" />
-      </figure>
-    {% endif %}
 
     {{ content }}
 
