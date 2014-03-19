@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Knowledge Nuggets From My Tmux.conf
-image: http://farm4.staticflickr.com/3778/9539539885_425d048245_h.jpg
-image_alt: doc
 ---
 
 When I switched from GNU Screen to Tmux, I was just jazzed that Tmux _had_ a 
@@ -12,6 +10,8 @@ lost to the annals of the Internet Archive.
 
 It wasn&#8217;t too long after I made the switch until I felt that old 
 hacker itch and began scouring Github for Tmux tips.
+
+You can view my complete `tmux.conf` on [my github](https://github.com/thcipriani/dotfiles/blob/master/tmux.conf)
 
 ## Tmux Tips for the Uninitiated
 
@@ -51,6 +51,8 @@ maximize the current  pane and hit `Ctrl-w` `=` to bring it back to an even
 split. Bringing that functionality to Tmux is very powerful and super easy.
 This line will let you hit `Meta` `|` to maximize a single pane and then hit
 `Meta` `|` again to bring it back to the original split.
+
+Warning: this is a tip that will only work with tmux 1.8+ (check your version via `tmux -V`)
 
 {% highlight bash %}
 bind-key | resize-pane -Z \; display-message "Zoom zoom zoom"
