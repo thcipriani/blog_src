@@ -211,14 +211,14 @@ Also, it&#8217;s always nice to have a `clean` target in any `Makefile`
 
 {% highlight bash %}
 clean:
-	rm -rf gh-pages
+	rm -rf "$(GHPAGES)"
 {% endhighlight %}
 
 I&#8217;d also like to be able to preview before commiting this file by typing `make serve`
 
 {% highlight bash %}
 serve:
-	cd gh-pages && python -m SimpleHTTPServer
+	cd $(GHPAGES) && python -m SimpleHTTPServer
 {% endhighlight %}
 
 Finally, speaking of commiting this file, let&#8217;s make `commit` a target, too.
@@ -271,10 +271,10 @@ init:
 	@[ -x $(LESSC) ] || npm install
 
 serve:
-	cd gh-pages && python -m SimpleHTTPServer
+	cd $(GHPAGES) && python -m SimpleHTTPServer
 
 clean:
-	rm -rf gh-pages
+	rm -rf $(GHPAGES)
 
 commit:
 	cd $(GHPAGES) && \
@@ -283,5 +283,5 @@ commit:
 	cd $(GHPAGES) && \
 		git push origin $(GHPAGES)
 
-.PHONY: init gh-pages clean commit serve
+.PHONY: init clean commit serve
 {% endhighlight %}
