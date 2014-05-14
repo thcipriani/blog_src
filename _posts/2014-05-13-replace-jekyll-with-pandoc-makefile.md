@@ -109,26 +109,54 @@ Running `make` takes my `README.md` and makes this:
 </html>
 {% endhighlight %}
 
-Layout/CSS
+Title/Layout/CSS
 ---
 
-So now I have html, but I need to be able to
+So now that I&#8217;m outputting html, I still need to be able to:
 
-1. configure a layout in which to render html
-2. include custom css in said layout.
+1. Configure a layout in which to render html
+2. Include a css file in said layout
+3. Add post metadata to my layout (e.g., title, headline, etc.)
 
-Oh, Pandoc knows layout.
+Pandoc is able to do all of these things&#8212;easy-peasy-lemon-squeezy.
 
-First, I looked at the default html5 layout file for Pandoc:
+First, to establish a layout, let&#8217;s copy the default html5 layout file for Pandoc:
 
 {% highlight bash %}
 pandoc -D html5 > _layout.html5
 {% endhighlight %}
 
-I made some tweaks to that file, kept the variables I wanted, ditched the
-variables I didn&#8217;t need.
+I&#8217;ll make some small tweaks to that file, keep the variables I need, ditch the
+variables I don&#8217;t need. Here is the html5 layout file I came up with:
 
-A quick search for `css` in `pandoc(1)` and I find the `--css` flag which
+{% highlight html %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:800">
+$for(css)$
+  <link rel="stylesheet" href="$css$">
+$endfor$
+</head>
+<body>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <main class="container">
+    $body$
+  </main>
+
+</body>
+</html>
+{% endhighlight %}
+
+Next, I need to figure out how to include a css stylesheet.  A quick
+search for `css` in `pandoc(1)` turns up the `--css` flag which
 enables you to link to a css stylesheet.
 
 Updated `Makefile`:
@@ -137,6 +165,25 @@ Updated `Makefile`:
 index.html: README.md
   pandoc -s --template "_layout" --css "css/main.css" -f markdown -t html5 -o "$@" "$<"
 {% endhighlight %}
+
+Finally, I need to be able to include a unique `<title>` tag string for
+each page. Again, a search through `pandoc(1)` for `variable` yields results;
+using the `-V` flag enables you to set template variables using `-V [KEY]=[val]`.
+
+A bit more digging in the online docs, however, nets better solution:
+YAML Metadata blocks&#8212;just like jekyll!
+
+So, for each markdown file in my repo, I&#8217;ll add a block to the top that looks
+like this:
+
+{% highlight bash %}
+---
+pagetitle: <pagetitle>
+---
+{% endhighlight %}
+
+`$pagetitle$` is the variable I defined in my `_layout.html5` that I&#8217;m
+now passing as a template to Pandoc.
 
 Makefile fanciness
 ---
