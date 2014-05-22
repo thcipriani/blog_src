@@ -57,6 +57,7 @@ script in `/etc/update-motd.d/25-baller-motd`
 cat yourimg.txt
 figlet "$(hostname)"
 printf "Public IP: $(dig +short myip.opendns.com @resolver1.opendns.com)\n"
+command -v fortune &> /dev/null && fortune
 {% endhighlight %}
 
 There are likely better articles on creating a _useful_ MOTD,
