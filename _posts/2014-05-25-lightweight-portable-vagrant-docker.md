@@ -147,7 +147,7 @@ This config also starts supervisor with the `--nodaemon` flag by default.
 Docker can run a container running a non-daemonized program as a daemon
 (much like supervisor can run non-daemonized programs as daemons).
 Supervisor is used as a way of running both nginx and php-fpm as non-daemonized
-programs. It is also noteworthy that the dockerfile creates and/or modifys configuration files for php-fpm and nginx
+programs. It is also noteworthy that the dockerfile creates and/or modifies configuration files for php-fpm and nginx
 to make sure they both run in non-daemon mode.
 
 `nginx/default`
