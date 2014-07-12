@@ -60,10 +60,10 @@ for this difference and grab the overflow property like this:
 {% highlight javascript %}
 var overflowStyle
 
-if (typeof document.body.currentStyle !== 'undefined')
-  overflowStyle = document.body.currentStyle.overflow
+if (typeof document.documentElement.currentStyle !== 'undefined')
+  overflowStyle = document.documentElement.currentStyle.overflow
 
-overflowStyle = overflowStyle || window.getComputedStyle(document.body, '').overflow
+overflowStyle = overflowStyle || window.getComputedStyle(document.documentElement, '').overflow
 {% endhighlight %}
 
 The two values of the `overflow` or `overflow-y` properties that will
@@ -73,7 +73,7 @@ or `overflow-y` properties will always cause a scrollbar.
 
 This is, once again, a bit of a simplification.
 
-In quirksmode in IE8 `document.documentElement.clientWidth` is 0. The root
+In quirksmode in IE8 `document.documentElement.clientHeight` is 0. The root
 element is `document.body`. This won&#8217;t affect most people reading this, but
 just to be on the safe side let&#8217;s add it into our solution.
 
