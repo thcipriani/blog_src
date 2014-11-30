@@ -569,6 +569,12 @@ blockquote {
     border-left: 2px solid #FF6347;
 }
 
+blockquote ol,
+blockquote ul {
+    padding: 0 1em 1em;
+    margin: 0 1em 1em;
+}
+
 /* logo */
 header a:link,
 header a:hover,
