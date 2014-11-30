@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create a Baller/Useful MOTD with ANSI Art
-image: http://tylercipriani-files.s3.amazonaws.com/zangief_motd.png
+image: https://tylercipriani-files.s3.amazonaws.com/zangief_motd.png
 ---
 Everyone universally agrees that most [Message of the Days (MOTDs)](http://linux.die.net/man/5/motd)
 are stupid and suck. By the end of reading this post, your mind grapes should be swollen with the knowledge
@@ -38,7 +38,7 @@ You can also try `./img2ponysay -2 -- youimg.png > yourimg.txt` but I&#8217;ve n
 
 ## MOTD-ifying
 
-![Mammoth Motd](http://tylercipriani-files.s3.amazonaws.com/mammoth_motd.png)
+![Mammoth Motd](https://tylercipriani-files.s3.amazonaws.com/mammoth_motd.png)
 
 On CentOS and Debian, I usually just throw the ponysay file directly into `/etc/motd` and maybe add on some other useful info:
 
