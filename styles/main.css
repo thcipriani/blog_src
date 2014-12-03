@@ -394,7 +394,7 @@ table {
    Code syntax https://gist.github.com/edwardhotchkiss/2005058/raw/60d092f6db99f23c971766a5941e22d138d0fe47/syntax.css
    ========================================================================== */
 
-.highlight { 
+.highlight {
     font-size: 0.8em;
     background-color: #efefef;
     padding: 0 1em;
@@ -510,10 +510,12 @@ body {
 
 /* Higlighter colors */
 ::selection {
-    background: #c0f541;
+  background: #c0f541;
+  text-shadow: none;
 }
 ::-moz-selection {
-    background: #c0f541;
+  background: #c0f541;
+  text-shadow: none;
 }
 
 img {
@@ -545,10 +547,22 @@ h6 {
             font-feature-settings: "liga", "dlig";
 }
 
-a:link
+a:link,
+a:active,
 a:visited,
 a:hover {
-    text-decoration: underline;
+  text-decoration: none;
+  text-decoration: underline\9;
+  text-shadow: 2px 0 0 #fefefe, -2px 0 0 #fefefe;
+  background-image: -webkit-gradient(linear, left top, right top, from(currentColor), to(currentColor));
+  background-image: -webkit-linear-gradient(left, currentColor 0%, currentColor 100%);
+  background-image:      -o-linear-gradient(left, currentColor 0%, currentColor 100%);
+  background-image:      -o-linear-gradient(left, currentColor 0%, currentColor 100%);
+  background-image:         linear-gradient(to right, currentColor 0%, currentColor 100%);
+  background-repeat: repeat-x;
+  background-position: 0 90%;
+  -webkit-background-size: 100% 1px;
+          background-size: 100% 1px;
 }
 
 a:link { color: #3498DB; }
@@ -579,8 +593,8 @@ blockquote ul {
 header a:link,
 header a:hover,
 header a:visited {
-    display: block; 
-    width: 76.875px; 
+    display: block;
+    width: 76.875px;
     margin: 0 auto;
     padding: 0;
     background: transparent;
@@ -751,7 +765,7 @@ aside:nth-of-type(3):target ~ ul { margin-left: -200%; }
 aside:nth-of-type(2):target ~ ul li:nth-of-type(3) button { opacity: 0; }
 
 /* nav */
-nav { 
+nav {
     margin-bottom: 4em;
 }
 
@@ -772,9 +786,26 @@ nav a:visited,
 nav a:hover {
     text-decoration: none;
     color: #3498DB;
+    text-shadow: none;
+    background-image: none;
+    background-position: 0 0;
+    background-size: auto auto;
 }
 
-nav a:hover { text-decoration: underline; }
+nav a:hover {
+  text-decoration: none;
+  text-decoration: underline\9;
+  text-shadow: 2px 0 0 #fefefe, -2px 0 0 #fefefe;
+  background-image: -webkit-gradient(linear, left top, right top, from(currentColor), to(currentColor));
+  background-image: -webkit-linear-gradient(left, currentColor 0%, currentColor 100%);
+  background-image:      -o-linear-gradient(left, currentColor 0%, currentColor 100%);
+  background-image:      -o-linear-gradient(left, currentColor 0%, currentColor 100%);
+  background-image:         linear-gradient(to right, currentColor 0%, currentColor 100%);
+  background-repeat: repeat-x;
+  background-position: 0 90%;
+  -webkit-background-size: 100% 1px;
+          background-size: 100% 1px;
+}
 
 /* section */
 section {
@@ -826,7 +857,20 @@ article header h1 a:hover {
     color: #3498DB;
 }
 
-article header h1 a:hover { text-decoration: underline; }
+article header h1 a:hover {
+  text-decoration: none;
+  text-decoration: underline\9;
+  text-shadow: 2px 0 0 #fefefe, -2px 0 0 #fefefe;
+  background-image: -webkit-gradient(linear, left top, right top, from(currentColor), to(currentColor));
+  background-image: -webkit-linear-gradient(left, currentColor 0%, currentColor 100%);
+  background-image:      -o-linear-gradient(left, currentColor 0%, currentColor 100%);
+  background-image:      -o-linear-gradient(left, currentColor 0%, currentColor 100%);
+  background-image:         linear-gradient(to right, currentColor 0%, currentColor 100%);
+  background-repeat: repeat-x;
+  background-position: 0 90%;
+  -webkit-background-size: 100% 1px;
+          background-size: 100% 1px;
+}
 
 
 article header h2 {
