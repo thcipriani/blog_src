@@ -961,6 +961,7 @@ ul {
         font-size: 1.25em;
     }
 
+    footer pre,
     figcaption {
         display: none;
     }
