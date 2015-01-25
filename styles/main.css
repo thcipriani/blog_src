@@ -682,7 +682,6 @@ footer p a:hover {
 }
 
 article footer { margin-left: 0; }
-footer pre { font-size: 0.5em; }
 
 hr {
     margin: 4em 0;
@@ -961,7 +960,6 @@ ul {
         font-size: 1.25em;
     }
 
-    footer pre,
     figcaption {
         display: none;
     }
