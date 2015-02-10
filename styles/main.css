@@ -759,21 +759,6 @@ section:after {
     clear: both;
 }
 
-/* slideshow */
-figure aside {
-    display: none;
-}
-
-aside:nth-of-type(1):target ~ ul { margin-left: 0; }
-aside:nth-of-type(2):target ~ ul li:nth-of-type(1) button { opacity: 0; }
-
-aside:nth-of-type(2):target ~ ul { margin-left: -100%; }
-aside:nth-of-type(3):target ~ ul li:nth-of-type(2) button { opacity: 0; }
-aside:nth-of-type(1):target ~ ul li:nth-of-type(2) button { opacity: 0; }
-
-aside:nth-of-type(3):target ~ ul { margin-left: -200%; }
-aside:nth-of-type(2):target ~ ul li:nth-of-type(3) button { opacity: 0; }
-
 /* nav */
 nav {
     margin-bottom: 4em;
