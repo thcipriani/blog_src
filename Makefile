@@ -1,4 +1,4 @@
-TOPIC = 'new thing'
+TOPIC ?= 'new thing'
 FILE = $(shell date "+./_posts/%Y-%m-%d-$(TOPIC).md" | sed -e y/\ /-/)
 
 new:
@@ -7,7 +7,7 @@ new:
 	echo "layout: post" >> $(FILE)
 	echo "published: false" >> $(FILE)
 	echo "---" >> $(FILE)
-	vim $(FILE)
+	echo $(FILE)
 
 deploy:
 	s3cmd sync --add-header=Expires:max-age=604800 --exclude '.git/*' --acl-public _site/ s3://tylercipriani.com/
