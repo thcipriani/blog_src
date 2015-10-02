@@ -4,4 +4,20 @@ url: http://www.tylercipriani.com
 auto: true
 server: true
 markdown: rdiscount
-exclude: Gruntfile.js, package.json, sass, node_modules, dev, gallery.html, components, styles/main.css, styles/gallery.css
+paginate: 5
+paginate_path: "/blog/page/:num/"
+exclude:
+    - Gruntfile.js
+    - package.json
+    - sass
+    - node_modules
+    - dev
+    - gallery.html
+    - components
+    - styles/main.css
+    - styles/gallery.css
+    - README.md
+
+gems:
+    - jemoji
+    - jekyll-sitemap

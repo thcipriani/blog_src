@@ -27,7 +27,7 @@ to specify how your prompt looks. You can define what theme you&#8217;d like to 
 in your <code>~/.zshrc</code> file. On or around line 8 you&#8217;ll want to
 update the line that starts with <code>ZSH_THEME=&#8230;</code> to look like this:
 
-{% highlight bash linenos %}
+{% highlight bash %}
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -47,7 +47,7 @@ That little code chestnut is available over on
 I also have a version of this prompt for Bash that I&#8217;ve made in preperation
 for the undoubted overwhelming demand that I expect to begin any time now:
 
-{% highlight bash linenos %}
+{% highlight bash %}
 # An extravagent PS1 http://blog.bigdinosaur.org/easy-ps1-colors/
 function prompt {
   # 30m - Black
