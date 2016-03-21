@@ -48,3 +48,15 @@ While the short example above is not a problem in isolation, it _can be_ a
 problem in a larger manifest. Puppet will succeed with some packages, fail in others, then
 create [unresolvable dependency conflicts](http://en.wikipedia.org/wiki/Dependency_hell)
 on the next run (after `apt-get update` has run).
+
+>**Edit**&#8212;2016-03-20
+>
+> This relationship is easier to see when you take advantage of puppet's
+> `--graph` ability:
+> {% highlight bash %}
+> puppet apply --graph test.pp
+> dot -Tpng /var/lib/puppet/state/graphs/relationships.dot -o Pictures/relationships.png
+> {% endhighlight %}
+>
+> ![Puppet relationship graph](/images/2016/2016-03-20_puppet-dot.png)
+

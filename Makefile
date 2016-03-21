@@ -4,7 +4,7 @@ FILE = $(shell date "+./_posts/%Y-%m-%d-$(TOPIC).md" | sed -e y/\ /-/)
 default: help
 
 help:
-	@echo Usage: make [new, deploy, setup-dev, serve]
+	@echo Usage: make [new, build, deploy, setup-dev, serve]
 
 new:
 	echo "---" >> $(FILE)
