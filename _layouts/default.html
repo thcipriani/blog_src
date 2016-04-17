@@ -46,14 +46,18 @@
             <script type="text/javascript" src="/scripts/html5shiv-min.js"></script>
         <![endif]-->
 
-        {% if page.css %}
-            {% for stylesheet in page.css %}
+        {% if page.css -%}
+            {% for stylesheet in page.css -%}
         <link rel="stylesheet" href="/styles/{{ stylesheet }}" media="screen" type="text/css">
             {% endfor %}
         {% endif %}
 
         <link href='//fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="author" href="/humans.txt">
+
+        <!-- OpenID things -->
+        <link rel="openid.server" href="https://openid.tylercipriani.com/" />
+        <link rel="openid2.provider" href="https://openid.tylercipriani.com/" />
     </head>
     <body>
         <main role="main">
