@@ -35,10 +35,15 @@
           */
         </script>
 
+        {% if page.path contains '_post' %}
+        <link rel="feed home" type="application/atom+xml" href="/feed.xml" title="Blog">
+        <!-- alternative website for feed readers with no SNI support https://www.mnot.net/blog/2014/05/09/if_you_can_read_this_youre_sniing -->
+        <link rel="feed home" type="application/atom+xml" href="http://tylercipriani.com.s3-website-us-east-1.amazonaws.com/feed.xml" title="Blog (non-SNI feedreader)">
+        {% else %}
         <link rel="feed alternate" type="application/atom+xml" href="/feed.xml" title="Blog">
-
         <!-- alternative website for feed readers with no SNI support https://www.mnot.net/blog/2014/05/09/if_you_can_read_this_youre_sniing -->
         <link rel="feed alternate" type="application/atom+xml" href="http://tylercipriani.com.s3-website-us-east-1.amazonaws.com/feed.xml" title="Blog (non-SNI feedreader)">
+        {% endif %}
 
         <link rel="stylesheet" type="text/css" href="/styles/main-min.css" />
 
@@ -46,8 +51,8 @@
             <script type="text/javascript" src="/scripts/html5shiv-min.js"></script>
         <![endif]-->
 
-        {% if page.css -%}
-            {% for stylesheet in page.css -%}
+        {% if page.css %}
+            {% for stylesheet in page.css %}
         <link rel="stylesheet" href="/styles/{{ stylesheet }}" media="screen" type="text/css">
             {% endfor %}
         {% endif %}
@@ -55,9 +60,24 @@
         <link href='//fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="author" href="/humans.txt">
 
+        {% if page.url == '/index.html' %}
         <!-- OpenID things -->
         <link rel="openid.server" href="https://openid.tylercipriani.com/" />
         <link rel="openid2.provider" href="https://openid.tylercipriani.com/" />
+        <meta http-equiv="X-XRDS-Location" content="https://openid.tylercipriani.com/xrds/thcipriani" />
+        {% endif %}
+
+        {% if page.next %}
+        <link rel="next" href="{{ page.next.url }}" />
+        {% elsif paginator.next_page %}
+        <link rel="next" href="{{ paginator.next_page_path }}" />
+        {% endif %}
+
+        {% if page.previous %}
+        <link rel="prev" href="{{ page.previous.url }}" />
+        {% elsif paginator.previous_page %}
+        <link rel="prev" href="{{ paginator.previous_page_path }}" />
+        {% endif %}
     </head>
     <body>
         <main role="main">
