@@ -702,7 +702,7 @@ footer p a:hover {
   background-size: auto auto;
 }
 
-footer p a[href^="http"]:after {
+main > footer p a[href^="http"]:after {
     content: '';
     margin: 0;
 }
