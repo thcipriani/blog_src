@@ -404,7 +404,13 @@ table {
 }
 
 code {
-    font-family: 'Bitstream Vera Sans Mono','Courier', monospace; 
+    font-family: 'Bitstream Vera Sans Mono','Courier', monospace;
+    -webkit-font-feature-settings: normal;
+       -moz-font-feature-settings: normal;
+        -ms-font-feature-settings: normal;
+         -o-font-feature-settings: normal;
+            font-feature-settings: normal;
+
 }
 
 pre {
@@ -569,6 +575,12 @@ a:link { color: #3498DB; }
 a:visited { color: #6a4c96; }
 a:hover { color: #463263; }
 
+a[href^="https://"]:after,
+a[href^="http://"]:after {
+  content: url(/images/Icon_External_Link.png);
+  margin: 0 0 0 5px;
+}
+
 main {
     width: 98%;
     *width: 889.9689438px;
@@ -680,6 +692,11 @@ footer p a:hover {
   text-decoration: none;
   background-position: 0 0;
   background-size: auto auto;
+}
+
+footer p a[href^="http"]:after {
+    content: '';
+    margin: 0;
 }
 
 article footer { margin-left: 0; }

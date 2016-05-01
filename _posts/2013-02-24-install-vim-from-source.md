@@ -18,9 +18,9 @@ The only thing worse than working on an old OS, with an old version of Vim is wo
 
 **Some plugins that depend on version 7.3:**
 
-- &shy;<a href="http://majutsushi.github.com/tagbar/" target="_blank">Tagbar</a>
-- &shy;<a href="http://myusuf3.github.com/numbers.vim/" target="_blank">Numbers.vim</a>
-- &shy;<a href="http://valloric.github.com/YouCompleteMe/" target="_blank">YouCompleteMe</a>
+- &shy;<a href="http://majutsushi.github.com/tagbar/">Tagbar</a>
+- &shy;<a href="http://myusuf3.github.com/numbers.vim/">Numbers.vim</a>
+- &shy;<a href="http://valloric.github.com/YouCompleteMe/">YouCompleteMe</a>
 
 And, really, those are just the plugins that fail _loudly_ for me. Like the ones that vomit, &#8220;Hey, WTF, guy?&#8221; to stdout every rootin&#8217; tootin&#8217; time I fire up Vim. There would likely be other functionality that I&#8217;d loose by not using Vim 7.3.3+.
 

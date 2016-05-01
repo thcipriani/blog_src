@@ -24,7 +24,7 @@ This post is written as a little reminder to myself of how I got it all up and r
 
 ##The process
 
-1. **Install Homebrew:**<br />Instructions are available on <a href="http://mxcl.github.com/homebrew/" target="_blank" title="Homebrew">Github</a> but really all it boils down to is: <code>ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"</code>
+1. **Install Homebrew:**<br />Instructions are available on <a href="http://mxcl.github.com/homebrew/" title="Homebrew">Github</a> but really all it boils down to is: <code>ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"</code>
 
 2. **Install MacVim:**<br />And make sure it overrides the system default Vim, which is pre-7.3 Vim and sucks (or it was last week when my MacBook got here) use: <code>brew install macvim --override-system-vim</code>
 

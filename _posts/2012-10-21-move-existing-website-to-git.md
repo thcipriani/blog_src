@@ -2,13 +2,13 @@
 layout: post
 title: Integrating git with your existing website
 ---
-Better git it in your soul<a href="http://www.youtube.com/watch?v=SPoK1lryfh4" target="_blank">*</a>.
+Better git it in your soul<a href="http://www.youtube.com/watch?v=SPoK1lryfh4">*</a>.
 
-Git has a <a href="https://bitly.com/bundles/matthewmccullough/1" target="_blank">lot</a> 
-of <a href="http://try.github.com/levels/1/challenges/1" target="blank">great</a> 
-<a href="https://peepcode.com/products/git" target="_blank">tutorials</a> 
+Git has a <a href="https://bitly.com/bundles/matthewmccullough/1">lot</a> 
+of <a href="http://try.github.com/levels/1/challenges/1">great</a> 
+<a href="https://peepcode.com/products/git">tutorials</a> 
 for getting started. There are also a number of great articles on 
-<a href="http://daneden.github.com/github-workflow/" target="_blank">how to 
+<a href="http://daneden.github.com/github-workflow/">how to 
 use git and github</a> for your workflow.
 
 What I haven&#8217;t seen is an article on how to integrate git with your 
@@ -21,12 +21,12 @@ existing site.
 I&#8217;m making the assumption that you have the following:
 <ul>
 <li>Knowledge of Linux</li>
-<li>&shy;<a href="http://library.linode.com/lamp-guides/ubuntu-12.04-precise-pangolin" target="_blank">
+<li>&shy;<a href="http://library.linode.com/lamp-guides/ubuntu-12.04-precise-pangolin">
 A local development environment
 </a></li>
 <li>git-core installed both locally and on your webserver</li>
 <li>rsync installed both locally and on your webserver</li>
-<li>&shy;<a href="http://www.commandlinefu.com/commands/view/771/copy-your-ssh-public-key-on-a-remote-machine-for-passwordless-login-the-easy-way" target="_blank">
+<li>&shy;<a href="http://www.commandlinefu.com/commands/view/771/copy-your-ssh-public-key-on-a-remote-machine-for-passwordless-login-the-easy-way">
   Keyless SSH access to your webserver
 </a></li>
 </ul>
@@ -40,7 +40,7 @@ I&#8217;m probably totally wrong about that &#9786;
 <h2>Step One:</h2>
 <strong>RSync your site to your local development environment.</strong> 
 
-In order to begin to develop locally (and break the old <a href="http://www.bnj.com/cowboy-coding-pink-sombrero/" target="_blank">cowboy-coding</a> habits
+In order to begin to develop locally (and break the old <a href="http://www.bnj.com/cowboy-coding-pink-sombrero/">cowboy-coding</a> habits
 that you&#8217;ve undoubtedly developed over the years) you need a local 
 copy of your site.
 
