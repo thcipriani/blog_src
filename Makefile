@@ -18,6 +18,8 @@ deploy:
 	s3cmd sync --add-header=Expires:max-age=604800 --exclude '.git/*' --acl-public _site/ s3://tylercipriani.com/
 	s3cmd setacl --acl-public --mime-type=text/css s3://tylercipriani.com/styles/main-min.css
 	s3cmd setacl --acl-public --mime-type=text/css s3://tylercipriani.com/styles/merkel-dag-d3.css
+	s3cmd modify --add-header='Content-type:text/css' s3://tylercipriani.com/styles/main-min.css
+	s3cmd modify --add-header='Content-type:text/css' s3://tylercipriani.com/styles/merkel-dag-d3.css
 
 setup-dev:
 	bundle -v || gem install bundler --no-rdoc --no-ri

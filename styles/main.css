@@ -906,6 +906,65 @@ ul {
     padding-left: 0;
 }
 
+/* Comments box
+ * ===================================================================== */
+
+#isso-thread {
+    text-align: left;
+    font-size: 0.85em;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+#isso-thread > h4 {
+    font-size: 0.85em;
+    margin: 2em 0 0.5em;
+}
+
+#isso-thread .isso-postbox,
+#isso-thread .isso-postbox *,
+#isso-root,
+#isso-root .isso-comment,
+#isso-root .isso-comment .isso-comment-header,
+#isso-root .isso-comment .text-wrapper,
+#isso-root .isso-follow-up {
+    width: 100%;
+}
+
+#isso-root .isso-comment .text-wrapper .text {
+    margin: 0 10% 0;
+    width: 90%;
+}
+
+#isso-thread .textarea {
+    height: 5em;
+}
+
+#isso-thread .isso-postbox .auth-section {
+    margin: 0.5 0 3em;
+}
+
+/* override all this awful styling */
+#isso-thread .isso-postbox .input-wrapper {
+    float: none;
+    display: block;
+    position: static;
+    max-width: 100%;
+    margin: 0.5em 0;
+}
+
+#isso-root {
+    width: 100%;
+}
+
+#isso-thread a { background-image: none; }
+
+.isso-powered {
+    font-size: 0.75em;
+    text-align: right;
+    font-family: sans-serif;
+}
+
 @media (max-width: 1200px) {
     .highlight { margin: 1.8em -25%; }
     blockquote { margin: 0 -25% 1.8em; }
