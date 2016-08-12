@@ -489,6 +489,31 @@ pre {
 /* ==========================================================================
    Custom Styles
    ========================================================================== */
+@font-face {
+    font-family: 'Old Standard TT';
+    font-weight: 400;
+    font-style: normal;
+    src: url('/static/fonts/oldstandard_tt/oldstandard-tt.eot') format('eot');
+    src: local('Old Standard TT Regular'),
+         local('OldStandardTT-Regular'),
+         url('/static/fonts/oldstandard_tt/oldstandard-tt.eot') format('embedded-opentype'),
+         url('/static/fonts/oldstandard_tt/oldstandard-tt.woff2') format('woff2'),
+         url('/static/fonts/oldstandard_tt/oldstandard-tt.woff') format('woff'),
+         url('/static/fonts/oldstandard_tt/oldstandard-tt.ttf') format('truetype'),
+         url('/static/fonts/oldstandard_tt/oldstandard-tt.svg#OldStandardTT') format('svg');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Old Standard TT';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Old Standard TT Italic'),
+       local('OldStandardTT-Italic'),
+       url('/static/fonts/oldstandard_tt/oldstandard-tt_italic.woff2') format('woff2'),
+       url('/static/fonts/oldstandard_tt/oldstandard-tt_italic.woff') format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 
 body {
     padding: 5em 0 8em;
